@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action="{% url 'first_form_view' %}" method="post" class="mb-3">
+    {{ form.as_p }}
+    {% csrf_token %}
+    <input type="submit" value="Далее" class="btn btn-primary">
+</form>
+{% endblock %}
+
+

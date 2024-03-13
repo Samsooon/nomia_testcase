@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h6>
+    We'll be in touch shortly
+</h6>
+<ul class="list-group">
+    <li class="list-group-item">Company: {{ form_data.company_name }}</li>
+    <li class="list-group-item">Email: {{ form_data.email }}</li>
+    <li class="list-group-item">Phone number: {{ form_data.phone_number }}</li>
+    <li class="list-group-item">Address: {{ form_data.address }}</li>
+</ul>
+{% endblock %}
